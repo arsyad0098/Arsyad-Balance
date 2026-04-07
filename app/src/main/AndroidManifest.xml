@@ -12,19 +12,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ArsyadBalance">
         <activity
-            android:name=".MainActivity"
+            android:name=".bg_input_rounded.xml"
             android:exported="false" />
-
         <activity
-            android:name=".pertemuan_2.SecondActivity"
+            android:name=".pertemuan_3.ThirdResultTask"
+            android:exported="false" />
+        <activity
+            android:name=".pertemuan_3.ThirdTaskActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pertemuan_2.SecondActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
