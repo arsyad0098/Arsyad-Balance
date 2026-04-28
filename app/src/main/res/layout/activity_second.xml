@@ -1,136 +1,208 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5">
+    android:background="#FFFFFF"
+    android:fillViewport="true">
 
     <LinearLayout
-        android:orientation="vertical"
-        android:padding="16dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="28dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp">
 
-        <!-- Judul -->
+        <LinearLayout
+            android:id="@+id/btnKembali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_arrow_back"
+                app:tint="#2D5A1B"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kembali"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#2D5A1B" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kalkulator Bangun"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#1A1A1A"
+            android:fontFamily="@font/inter_italic_variable_font"
+            android:layout_marginBottom="8dp" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Kalkulator Bangun"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginBottom="16dp"/>
+            android:text="Hitung luas segitiga dan volume balok dengan cepat dan mudah."
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:lineSpacingExtra="4dp"
+            android:fontFamily="@font/inter_italic_variable_font"
+            android:layout_marginBottom="28dp" />
 
-        <!-- CARD SEGITIGA -->
         <LinearLayout
-            android:orientation="vertical"
-            android:background="#FFFFFF"
-            android:padding="16dp"
-            android:layout_marginBottom="16dp"
-            android:elevation="4dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card_green"
+            android:padding="20dp"
+            android:layout_marginBottom="24dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Luas Segitiga"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
-                android:layout_marginBottom="8dp"/>
+                android:textColor="#1A1A1A"
+                android:layout_marginBottom="16dp"/>
 
             <EditText
                 android:id="@+id/etAlas"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:paddingHorizontal="16dp"
                 android:hint="Masukkan Alas"
-                android:inputType="number"
-                android:layout_marginBottom="8dp"/>
+                android:inputType="numberDecimal"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="12dp"/>
 
             <EditText
                 android:id="@+id/etTinggiSegitiga"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:paddingHorizontal="16dp"
                 android:hint="Masukkan Tinggi"
-                android:inputType="number"
-                android:layout_marginBottom="12dp"/>
+                android:inputType="numberDecimal"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="20dp"/>
 
             <Button
                 android:id="@+id/btnHitungLuas"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="52dp"
                 android:text="Hitung Luas"
-                android:backgroundTint="#6200EE"
-                android:textColor="#FFFFFF"/>
+                android:textColor="#2D5A1B"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:backgroundTint="#A8E07A"
+                app:cornerRadius="50dp" />
 
             <TextView
                 android:id="@+id/tvHasilLuas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Hasil:"
+                android:text="Hasil: "
+                android:textColor="#27500A"
+                android:textSize="15sp"
                 android:textStyle="bold"
-                android:layout_marginTop="12dp"/>
+                android:gravity="center"
+                android:layout_marginTop="16dp"/>
 
         </LinearLayout>
 
-        <!-- CARD BALOK -->
         <LinearLayout
-            android:orientation="vertical"
-            android:background="#FFFFFF"
-            android:padding="16dp"
-            android:elevation="4dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card_green"
+            android:padding="20dp"
+            android:layout_marginBottom="16dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Volume Balok"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
-                android:layout_marginBottom="8dp"/>
+                android:textColor="#1A1A1A"
+                android:layout_marginBottom="16dp"/>
 
             <EditText
                 android:id="@+id/etPanjang"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:paddingHorizontal="16dp"
                 android:hint="Masukkan Panjang"
-                android:inputType="number"
-                android:layout_marginBottom="8dp"/>
+                android:inputType="numberDecimal"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="12dp"/>
 
             <EditText
                 android:id="@+id/etLebar"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:paddingHorizontal="16dp"
                 android:hint="Masukkan Lebar"
-                android:inputType="number"
-                android:layout_marginBottom="8dp"/>
+                android:inputType="numberDecimal"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="12dp"/>
 
             <EditText
                 android:id="@+id/etTinggiBalok"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:paddingHorizontal="16dp"
                 android:hint="Masukkan Tinggi"
-                android:inputType="number"
-                android:layout_marginBottom="12dp"/>
+                android:inputType="numberDecimal"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="20dp"/>
 
             <Button
                 android:id="@+id/btnHitungVolume"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="52dp"
                 android:text="Hitung Volume"
-                android:backgroundTint="#03DAC5"
-                android:textColor="#000000"/>
+                android:textColor="#2D5A1B"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:backgroundTint="#A8E07A"
+                app:cornerRadius="50dp" />
 
             <TextView
                 android:id="@+id/tvHasilVolume"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Hasil:"
+                android:text="Hasil: "
+                android:textColor="#27500A"
+                android:textSize="15sp"
                 android:textStyle="bold"
-                android:layout_marginTop="12dp"/>
+                android:gravity="center"
+                android:layout_marginTop="16dp"/>
 
         </LinearLayout>
 
     </LinearLayout>
-
 </ScrollView>

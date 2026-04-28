@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Arsyad-Balance</string>
+    <string name="welcome_back">Selamat Datang</string>
+    <string name="login_subtitle">Silakan masuk ke akun Anda</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Kata Sandi</string>
+    <string name="forgot_password">Lupa Kata Sandi?</string>
+    <string name="login_button">Masuk</string>
+    <string name="or_login_with">Atau masuk dengan</string>
+    <string name="dont_have_account">Belum punya akun? </string>
+    <string name="register_now">Daftar Sekarang</string>
+    <string name="desc_logo">Logo Bina Desa</string>
+    <string name="desc_google">Masuk dengan Google</string>
+    <string name="desc_facebook">Masuk dengan Facebook</string>
 </resources>

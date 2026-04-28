@@ -13,67 +13,46 @@
         android:orientation="vertical"
         android:gravity="center_horizontal"
         android:paddingHorizontal="28dp"
-        android:paddingTop="64dp"
+        android:paddingTop="56dp"
         android:paddingBottom="40dp">
 
-        <!-- Icon Lingkaran Centang -->
-        <FrameLayout
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginBottom="24dp">
-
-            <View
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:background="@drawable/bg_circle_green" />
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_check"
-                android:contentDescription="Success" />
-        </FrameLayout>
-
-        <!-- Brand kecil -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:layout_marginBottom="8dp">
+            android:layout_marginBottom="16dp">
 
             <ImageView
-                android:layout_width="18dp"
-                android:layout_height="18dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:src="@drawable/ic_leaf"
-                android:layout_marginEnd="6dp" />
+                android:layout_marginEnd="8dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Leafboard"
-                android:textSize="14sp"
-                android:textColor="#888888" />
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#2D5A1B" />
         </LinearLayout>
 
-        <!-- Judul -->
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/tvWelcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Selamat Datang!"
+            android:text="Beranda Utama"
             android:textSize="26sp"
             android:textStyle="bold"
             android:textColor="#1A1A1A"
             android:fontFamily="@font/inter_italic_variable_font"
             android:layout_marginBottom="8dp" />
 
-        <!-- Subjudul -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Akun kamu berhasil dibuat.\nSiap untuk bekerja tanpa batas."
+            android:text="Selamat datang kembali!\nApa yang ingin kamu kerjakan hari ini?"
             android:textSize="14sp"
             android:textColor="#888888"
             android:gravity="center"
@@ -81,16 +60,23 @@
             android:fontFamily="@font/inter_italic_variable_font"
             android:layout_marginBottom="28dp" />
 
-        <!-- Card Checklist -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:background="@drawable/bg_card_green"
             android:padding="16dp"
-            android:layout_marginBottom="24dp">
+            android:layout_marginBottom="32dp">
 
-            <!-- Item 1 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ringkasan Aktivitas"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#1A1A1A"
+                android:layout_marginBottom="12dp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -116,45 +102,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Email terverifikasi"
+                    android:text="5 Proyek sedang berjalan"
                     android:textSize="13sp"
                     android:textStyle="bold"
                     android:textColor="#27500A" />
             </LinearLayout>
 
-            <!-- Item 2 -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:layout_marginBottom="12dp">
-
-                <FrameLayout
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:layout_marginEnd="12dp">
-                    <View
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:background="@drawable/bg_circle_green_dark" />
-                    <ImageView
-                        android:layout_width="16dp"
-                        android:layout_height="16dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/ic_check_small" />
-                </FrameLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Akun berhasil dibuat"
-                    android:textSize="13sp"
-                    android:textStyle="bold"
-                    android:textColor="#27500A" />
-            </LinearLayout>
-
-            <!-- Item 3 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -179,7 +132,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Login berhasil"
+                    android:text="2 Pesan baru belum dibaca"
                     android:textSize="13sp"
                     android:textStyle="bold"
                     android:textColor="#27500A" />
@@ -187,17 +140,60 @@
 
         </LinearLayout>
 
-        <!-- Tombol Mulai -->
-        <Button
-            android:id="@+id/btnMulai"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:text="Mulai sekarang"
-            android:textColor="#2D5A1B"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            android:backgroundTint="#A8E07A"
-            app:cornerRadius="50dp" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnBangunRuang"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Bangun Ruang"
+                android:textColor="#2D5A1B"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:backgroundTint="#A8E07A"
+                app:cornerRadius="50dp"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btnCustom1"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Custom 1"
+                android:textColor="#2D5A1B"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:backgroundTint="#A8E07A"
+                app:cornerRadius="50dp"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btnCustom2"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Custom 2"
+                android:textColor="#2D5A1B"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:backgroundTint="#A8E07A"
+                app:cornerRadius="50dp"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btnMenuKeluar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Keluar"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:backgroundTint="#2D5A1B"
+                app:cornerRadius="50dp" />
+
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>

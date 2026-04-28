@@ -2,10 +2,9 @@ package com.example.arsyad_balance.pertemuan_2
 
 import android.os.Bundle
 import android.widget.*
+import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.arsyad_balance.R
 
 class SecondActivity : AppCompatActivity() {
@@ -15,6 +14,11 @@ class SecondActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_second)
 
+        // 🔙 TOMBOL KEMBALI
+        val btnKembali = findViewById<LinearLayout>(R.id.btnKembali)
+        btnKembali.setOnClickListener {
+            finish()
+        }
 
         // SEGITIGA
         val etAlas = findViewById<EditText>(R.id.etAlas)
