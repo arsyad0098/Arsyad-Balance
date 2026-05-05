@@ -26,7 +26,7 @@ class WebViewActivity : AppCompatActivity() {
 
         webView.settings.javaScriptEnabled = true
         webView.webViewClient = WebViewClient()
-        webView.loadUrl("https://bantuansosial-admin.alwaysdata.net")
+        webView.loadUrl("https://arsyad-pertanahanadmin.alwaysdata.net")
 
         btnBack.setOnClickListener {
             finish()

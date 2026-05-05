@@ -32,7 +32,8 @@ class BinaDesaActivity : AppCompatActivity() {
 
             Toast.makeText(this, "Login Berhasil!", Toast.LENGTH_SHORT).show()
             
-            val intent = Intent(this, MainActivity::class.java)
+            // Pindah ke BaseActivity yang berisi Bottom Navigation
+            val intent = Intent(this, BaseActivity::class.java)
             startActivity(intent)
             finish()
         }

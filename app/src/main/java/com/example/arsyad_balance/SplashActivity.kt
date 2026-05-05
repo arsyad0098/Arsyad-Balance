@@ -17,8 +17,8 @@ class SplashActivity : AppCompatActivity() {
 
         Handler(Looper.getMainLooper()).postDelayed({
             if (isLogin) {
-                // Jika sudah login, langsung ke MainActivity
-                startActivity(Intent(this, MainActivity::class.java))
+                // Jika sudah login, langsung ke BaseActivity (dengan BottomNav)
+                startActivity(Intent(this, BaseActivity::class.java))
             } else {
                 // Jika belum login, ke halaman BinaDesaActivity (Login)
                 startActivity(Intent(this, BinaDesaActivity::class.java))

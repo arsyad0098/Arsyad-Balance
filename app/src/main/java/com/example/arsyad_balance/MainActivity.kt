@@ -10,9 +10,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.arsyad_balance.pertemuan_2.SecondActivity
-import com.example.arsyad_balance.pertemuan_4.Custom1Activity
-import com.example.arsyad_balance.pertemuan_4.Custom2Activity
+import com.example.arsyad_balance.Home.pertemuan_2.SecondActivity
+import com.example.arsyad_balance.Home.pertemuan_4.Custom1Activity
+import com.example.arsyad_balance.Home.pertemuan_4.Custom2Activity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

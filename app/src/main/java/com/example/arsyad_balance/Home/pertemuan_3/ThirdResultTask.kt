@@ -1,4 +1,4 @@
-package com.example.arsyad_balance.pertemuan_3
+package com.example.arsyad_balance.Home.pertemuan_3
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,9 +7,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AlertDialog
 import com.example.arsyad_balance.R
-import com.example.arsyad_balance.pertemuan_2.SecondActivity
-import com.example.arsyad_balance.pertemuan_4.Custom1Activity
-import com.example.arsyad_balance.pertemuan_4.Custom2Activity
+import com.example.arsyad_balance.Home.pertemuan_2.SecondActivity
+import com.example.arsyad_balance.Home.pertemuan_4.Custom1Activity
+import com.example.arsyad_balance.Home.pertemuan_4.Custom2Activity
 import com.google.android.material.snackbar.Snackbar
 
 class ThirdResultTask : AppCompatActivity() {

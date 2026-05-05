@@ -24,6 +24,10 @@
         </activity>
 
         <activity
+            android:name=".BaseActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".WebViewActivity"
             android:exported="false" />
 
@@ -32,26 +36,29 @@
             android:exported="false" />
 
         <activity
-            android:name=".pertemuan_4.Custom2Activity"
+            android:name=".Home.pertemuan_4.Custom2Activity"
             android:exported="false" />
+
         <activity
-            android:name=".pertemuan_4.Custom1Activity"
+            android:name=".Home.pertemuan_4.Custom1Activity"
             android:exported="false" />
+
         <activity
-            android:name=".bg_input_rounded.xml"
+            android:name=".Home.pertemuan_3.ThirdResultTask"
             android:exported="false" />
+
         <activity
-            android:name=".pertemuan_3.ThirdResultTask"
+            android:name=".Home.pertemuan_3.ThirdTaskActivity"
             android:exported="false" />
-        <activity
-            android:name=".pertemuan_3.ThirdTaskActivity"
-            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+
         <activity
-            android:name=".pertemuan_2.SecondActivity"
+            android:name=".Home.pertemuan_2.SecondActivity"
             android:exported="false" />
+
     </application>
 
 </manifest>
