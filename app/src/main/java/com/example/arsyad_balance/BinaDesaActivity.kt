@@ -23,6 +23,7 @@ class BinaDesaActivity : AppCompatActivity() {
         sharedPreferences = getSharedPreferences("UserPrefs", Context.MODE_PRIVATE)
 
         val btnLogin = findViewById<Button>(R.id.btnLogin)
+        val tvRegister = findViewById<android.widget.TextView>(R.id.tvRegister)
         
         btnLogin.setOnClickListener {
             // Simulasi login berhasil
@@ -31,11 +32,16 @@ class BinaDesaActivity : AppCompatActivity() {
             editor.apply()
 
             Toast.makeText(this, "Login Berhasil!", Toast.LENGTH_SHORT).show()
-            
+
             // Pindah ke BaseActivity yang berisi Bottom Navigation
             val intent = Intent(this, BaseActivity::class.java)
             startActivity(intent)
             finish()
+        }
+
+        tvRegister.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
