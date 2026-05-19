@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import com.example.arsyad_balance.About.AboutFragment
 import com.example.arsyad_balance.Home.HomeFragment
 import com.example.arsyad_balance.Profile.ProfileFragment
+import com.example.arsyad_balance.Settings.SettingFragment
 import com.example.arsyad_balance.databinding.ActivityBaseBinding
 
 class BaseActivity : AppCompatActivity() {
@@ -40,6 +41,10 @@ class BaseActivity : AppCompatActivity() {
                 }
                 R.id.nav_about -> {
                     replaceFragment(AboutFragment())
+                    true
+                }
+                R.id.nav_settings -> {
+                    replaceFragment(SettingFragment())
                     true
                 }
                 R.id.nav_profile -> {

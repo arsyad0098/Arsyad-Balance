@@ -14,6 +14,7 @@ import com.example.arsyad_balance.WebViewActivity
 import com.example.arsyad_balance.Home.pertemuan_2.SecondActivity
 import com.example.arsyad_balance.Home.pertemuan_4.Custom1Activity
 import com.example.arsyad_balance.Home.pertemuan_4.Custom2Activity
+import com.example.arsyad_balance.Home.pertemuan_9.NinthActivity
 import com.example.arsyad_balance.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -57,6 +58,10 @@ class HomeFragment : Fragment() {
 
             btnWebView.setOnClickListener {
                 startActivity(Intent(requireContext(), WebViewActivity::class.java))
+            }
+
+            btnPertemuan9.setOnClickListener {
+                startActivity(Intent(requireContext(), NinthActivity::class.java))
             }
 
             ivLogout.setOnClickListener {
